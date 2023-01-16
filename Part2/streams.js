@@ -10,3 +10,6 @@ readStream.on('data', (chunk) => {
   
     writeStream.write(chunk)
 })
+
+//pipe reads data and passes it into write stream same as the code before just better syntax
+readStream.pipe(writeStream)
