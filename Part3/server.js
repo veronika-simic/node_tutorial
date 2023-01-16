@@ -1,7 +1,7 @@
 const http = require('http');
 /* the callback function is going to run each time a request is made */
 const server = http.createServer((req, res) => {
-    console.log('request made')
+    console.log(req.method)
 });
 /* the req object has a lot info about the request being made, such as the url, req type....*/
 /* res object is the object we use to send response to the user in the browser */
