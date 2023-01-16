@@ -22,6 +22,12 @@ const server = http.createServer((req, res) => {
       path += "about.html";
       res.statusCode = 200;
       break;
+    /* if the page has been moved we want to redirect to about*/
+    case "./about-me":
+      res.statusCode = 301;
+      res.setHeader("Location", "/about");
+      res.end();
+      break;
     default:
       path += "404.html";
       res.statusCode = 400;
