@@ -1,2 +1,5 @@
 In the browser we have window object which is a global object. But in our code global object is global.
 But they are not the same. Global object in node does not have DOM selectors. But thats ok because we wont be using Node on the frontend. Just on the backend
+Streams allow us to use data before it has finished loading. They do this with buffers
+This is how netflix functions. Little bits of data are sent so that we can start watching straight away.
+
