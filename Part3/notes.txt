@@ -4,3 +4,8 @@ We type the website address which sends request to server. Server then looks int
 How does a browser know to which server its going to send the request? 
 IP address (instead we use Domain names). Clients and servers communicate with HTTP
 In node we manually create server unlike PHP 
+
+What is localhost? 
+It is like a domain name
+It takes us into loop address. It takes us back to our own computer. It means listen for events coming to our own computer
+We need a port number because its like doors into computers. They must be different from other apps like skype or spotify so they do not clash.

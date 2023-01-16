@@ -10,3 +10,5 @@ server.listen(3000, 'localhost', () => {
     console.log('listening for requests on port 3000')
 })
 /* host name is by default localhost we do not have to specify it like above */
+/* this code is running in the backend so we do not see anything in the browser console
+but rather in the terminal here */
