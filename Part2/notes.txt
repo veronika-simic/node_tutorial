@@ -1,0 +1,2 @@
+In the browser we have window object which is a global object. But in our code global object is global.
+But they are not the same. Global object in node does not have DOM selectors. But thats ok because we wont be using Node on the frontend. Just on the backend
