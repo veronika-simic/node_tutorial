@@ -1,0 +1,6 @@
+Clients and servers
+
+We type the website address which sends request to server. Server then looks into the request and decides what it is going to respond. 
+How does a browser know to which server its going to send the request? 
+IP address (instead we use Domain names). Clients and servers communicate with HTTP
+In node we manually create server unlike PHP 
