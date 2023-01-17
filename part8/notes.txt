@@ -5,3 +5,4 @@ while use runs for each request
 
 Middleware runs top to bottom, order is very important
 With Middleware we can log details of every request, authenticate users, return 404
+
