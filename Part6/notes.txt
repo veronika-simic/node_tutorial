@@ -1,4 +1,4 @@
-We do not have to use express but its much easier to use it
+We do not have to use express but its much easier to use it, allows us to write clean code
 
 If we want to listen for get request. First argument is the path we want to listen to.
 The second is a function that takes req and res. Req gives us info about type or request, url.

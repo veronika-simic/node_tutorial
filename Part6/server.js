@@ -6,13 +6,11 @@ const app = express();
 app.listen(3000);
 
 app.get("/", (req, res) => {
-  res.send("<p>Home page</p>");
-  res.sendFile("Part4/views/index.html", { root: __dirname }); // we need to tell express where this path is relative from so we pass an object, what is this path relative to
+  res.sendFile("./views/index.html", { root: __dirname }); // we need to tell express where this path is relative from so we pass an object, what is this path relative to
 });
 
 app.get("/about", (req, res) => {
-  res.send("<p>About page</p>");
-  res.sendFile("Part4/views/about.html", { root: __dirname });
+  res.sendFile("./views/about.html", { root: __dirname });
 });
 
 // redirects in express --> redirects and set status code
