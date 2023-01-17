@@ -6,3 +6,6 @@ Package.json file
 If we will use any third party packages we should create package.json file 
 run npm init 
 Package-lock. json keeps track of different dependencie versions
+When installing a package we can use --save. This is mostly for older versions of node. 
+Use it just to be safe
+Lodash has a lot of different methods
