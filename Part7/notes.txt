@@ -1,0 +1,17 @@
+View engines
+
+They allow us to embed JS into html
+
+<% const name = "vera" %> 
+
+When displaying data we need equall sing
+<p><%= name %></p>
+
+
+We can pass data to this files 
+app.get("/", (req, res) => {
+  res.render("index", {title: 'Home'}); // we need to tell express where this path is relative from so we pass an object, what is this path relative to
+});
+
+this way property title is beeing passed to ejs. In order to use it we use pipes
+<title><Blog Ninja | <%title %></title>
