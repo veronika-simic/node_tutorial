@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const _ = require("lodash");
 const server = http.createServer((req, res) => {
   /*  console.log(req);
   // set header content type this can be seen in the network
@@ -9,6 +10,12 @@ const server = http.createServer((req, res) => {
   // close browser
   res.end(); */
 
+  // lodash
+  const num = _.random(0,20);
+  const greet = _.once(() => {
+    console.log('Hi')
+  })
+  console.log(num)
   res.setHeader("Content-Type", "text/html");
   // send html file
 
