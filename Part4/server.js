@@ -11,11 +11,13 @@ const server = http.createServer((req, res) => {
   res.end(); */
 
   // lodash
-  const num = _.random(0,20);
+  const num = _.random(0, 20);
   const greet = _.once(() => {
-    console.log('Hi')
-  })
-  console.log(num)
+    console.log("Hi");
+  });
+  greet();
+  console.log(num);
+
   res.setHeader("Content-Type", "text/html");
   // send html file
 
