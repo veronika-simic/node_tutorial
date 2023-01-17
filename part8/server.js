@@ -3,15 +3,23 @@ const express = require("express");
 // express app
 const app = express();
 
+app.set("view engine", "ejs");
 // listen for requests
 app.listen(3000);
 
 // after we run this the express does not know what to do next, even if we click the about page link nothing happens
-app.use((req, res) => {
+app.use((req, res, next) => {
   console.log("New request is made");
   console.log("host", req.hostname);
   console.log("path", req.path);
   console.log("method", req.method);
+  next();
+});
+
+app.use((req, res, next) => {
+  console.log("in the next");
+
+  next();
 });
 
 app.get("/", (req, res) => {
