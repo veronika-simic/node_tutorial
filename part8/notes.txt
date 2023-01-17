@@ -1,0 +1,7 @@
+Middleware is any kind of code which runs on the server between getting a request and seding a response
+use method is used to run some Middleware code, we can have many functions like this
+.get handlers are also Middleware but difference between get and use is that get runs only for get request
+while use runs for each request
+
+Middleware runs top to bottom, order is very important
+With Middleware we can log details of every request, authenticate users, return 404
