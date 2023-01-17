@@ -1,0 +1,7 @@
+database
+
+NoSQL use Collections and Documents --> MongoDB
+Each collection stores documents. Each document has its own data. This data is stored in formats similar to JSON
+Each has its own id
+
+We will use mongoose to interact with DB. It is a ODM library. It provides an easy way to communicate with the DB
