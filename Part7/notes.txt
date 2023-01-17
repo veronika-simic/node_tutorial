@@ -1,6 +1,6 @@
 View engines
 
-They allow us to embed JS into html
+They allow us to write html and inject dynamic data and logic into them (variables, loops)
 
 <% const name = "vera" %> 
 

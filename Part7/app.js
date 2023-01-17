@@ -15,15 +15,15 @@ app.get("/", (req, res) => {
     { title: "Whats new in CSS", snippet: "Lorem ipsum" },
     { title: "Whats new in HTML", snippet: "Lorem ipsum" },
   ];
-  res.render("index", { title: "Home", blogs }); // we need to tell express where this path is relative from so we pass an object, what is this path relative to
+  res.render("/views/index", { title: "Home", blogs }); // we need to tell express where this path is relative from so we pass an object, what is this path relative to
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About" });
+  res.render("views/about", { title: "About" });
 });
 
 app.get("/blogs/create", (req, res) => {
-  res.render("create", { title: "Blog" });
+  res.render("views/create", { title: "Blog" });
 });
 // 404 page --> this function fires every time if the request gets to this point in code
 // here we need to edit status code to 404
