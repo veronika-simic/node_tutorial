@@ -1,0 +1,8 @@
+We do not have to use express but its much easier to use it
+
+If we want to listen for get request. First argument is the path we want to listen to.
+The second is a function that takes req and res. Req gives us info about type or request, url.
+Res sends a response
+app.get('/')
+res.send() is equall to  res.setHeader("Content-Type", "text/html");
+express will figure out for us the type of content and status code
